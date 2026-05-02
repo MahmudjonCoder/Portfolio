@@ -5,9 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio</title>
 <link rel="stylesheet" href="./index.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body class="tana">
+
+    <input type="checkbox" id="toggle-theme">
+
 
 <header class="boshqaruv pd">
     <h2 class="logo">Maxmudjon</h2>
@@ -18,11 +24,15 @@
         <a class="aloqa" href="#oilam">Meni Oilam</a>
         <a class="aloqa" href="#loyihalarim">Loyihalarim</a>
         <a class="aloqa" href="#guruhim">Guruhim</a>
-        <a class="aloqa" href="#boglanish">Bog‘lanish</a>
+        <!-- <a class="aloqa" href="#boglanish">Bog‘lanish</a> -->
+        <label for="toggle-theme">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+        </label>
     </nav>
+
 </header>
 
-<main class="all">
+<main class="all theme">
     <section id="bosh_sahifa" class="bosh_sahifa pd">
         <div class="chap">
             <h1 class="sarlavha">Maxmudov Maxmudjon Baxrom o'g'li</h1>
@@ -31,30 +41,31 @@
         <div class="home-sci">
             <a href="#" style="--i: 8"><i class="bx bxl-instagram"></i></a>
             <a href="tel:+998930013321" style="--i: 9"><i class='bx bxs-phone-call'></i></a>
-            <a href="https://t.me/muzaffur" style="--i: 10"><i class="bx bxl-telegram"></i></a>
+            <a href="" style="--i: 10"><i class="bx bxl-telegram"></i></a>
         </div>
 
-            <p class="matn">Zamonaviy va kuchli saytlar yarataman</p>
-            <button id="men_haqimda" class="tugma">Men haqimda</button>
+            <p class="matn">Zamonaviy va kuchli saytlar yarataman</p><br>
+            <button id="men_haqimda" class="tugma">Men haqimda</button><br>
         </div>
 
         <div class="ong">
-            <img class="rasm" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3" alt="img">
+            <img class="rasm" src="./photo_2026-03-29_15-11-36.jpg" alt="img">
         </div>
     </section>
     
 <section id="men_haqimda" class="men_haqimda pd">
 
-    <h2 class="katta_title">Men <span>haqimda</span></h2>
+    <h2 class="katta_title" style="font-size: 50px; background: linear-gradient(90deg, #22d3ee, #a855f7); margin-top: 30px;" border-radius: 30px;>Men <span>haqimda</span></h2>
+    
 
     <div class="about_box">
 
         <div class="about_img">
-            <img src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3" alt="img">
+            <img src="./IMG_9404.JPG" alt="img">
         </div>
         
         <div class="about_text">
-            <h2>Bo‘lajak <span>dasturchi</span></h2>
+            <h2 >Bo‘lajak <span>dasturchi</span></h2>
             <p style="font-size: 30px;">
                 Ismim Maxmudjon. Yoshim 15 da. IT ning dasturlash yonalishiga qiziqaman. Kelajakda InshaAlloh dunyo taniydigan dasturchi bo'laman. Shu bilan cheklanib qolmay IT ning boshqa yo'nalishlarini ham o'qib o'rganmoqchiman.
             </p>
@@ -64,196 +75,283 @@
     
 </section>
 
-
     <section id="oilam" class="oilam pd">
 
-    <h2 class="katta_title">Mening <span>Oilam</span></h2>
+    <h2 class="katta_title" style="font-size: 50px; background: linear-gradient(90deg, #22d3ee, #a855f7); margin-top: 30px;">Mening <span>Oilam</span></h2>
     
-    <div class="contenier">
-        <img class="oilamimg" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        <div>
-            <b>Bu meni adajonim</b><br>
-            <p>Adamlani Ismlari Baxrom. Ular Tadbirkorlar. Adamla o'g'il bola har bir narsaga o'z kuchi, mehnati va halolligi bilan erishshi kerak deb etadilar. Shuning uchun man </p>
+    <div class="contenier" data-aos="fade-right">
+        <img class="oilamimg" data-aos="flip-left" src="./adam.jpg" alt="">
+        <div data-aos="fade-left" data-aos="fade-down">
+            <b style="font-size: 50px;">Bu meni adajonim.</b>
+            <p style="font-size: 20px;">Adamlani Ismlari Baxrom. Ular Tadbirkorlar. Adamla o'g'il bola har bir narsaga o'z kuchi, mehnati va halolligi bilan erishshi kerak deb etadilar.</p>
         </div>
     </div>
-    <div class="contenier">
-        <div>
-            <b>Bu meni onajonim</b><br>
-            <p>Ismlari Dilobar. Ula uy bekasila. Mani har taraflama qo'llab quvvatlaydila. Ula juda mehribonla.</p>
+    <div class="contenier" data-aos="fade-right">
+        <div data-aos="fade-left" data-aos="fade-down">
+            <b style="font-size: 50px;">Bu meni onajonim</b>
+            <p style="font-size: 20px;">Ismlari Dilobar. Ula uy bekasila. Mani har taraflama qo'llab quvvatlaydila. Ula juda mehribonla.</p>
         </div>
-        <img class="oilamimg" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <img class="oilamimg" data-aos="flip-left" src="./oyim.jpg" alt="">
     </div>
-    <div class="contenier">
-        <img class="oilamimg" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        <div>
-            <b>Bu meni opajonim</b>
-            <p>Ismlari Durdona. Mani sirdoshim, oiladagi do'stim.Opam bilan ko'p narsalarni maslahatlashaman.</p>
+    <div class="contenier" data-aos="fade-right">
+        <img class="oilamimg" data-aos="flip-left" src="./opam.jpg" alt="">
+        <div data-aos="fade-left" data-aos="fade-down">
+            <b style="font-size: 50px;">Bu meni opajonim</b>
+            <p style="font-size: 20px;">Ismlari Durdona. Mani sirdoshim, oiladagi do'stim.Opam bilan ko'p narsalarni maslahatlashaman.</p>
         </div>
     </div>
-    <div class="contenier">
-        <div>
-            <b>Bular mening ukalarim</b>
-            <p>Rasuljon, Abubakr va Umar. Mani erkatoylarim. </p>
+    <div class="contenier" data-aos="fade-right">
+        <div data-aos="fade-left" data-aos="fade-down">
+            <b style="font-size: 50px;">Bular mening ukalarim</b>
+            <p style="font-size: 20px;">Rasuljon, Abubakr va Umar. Mani erkatoylarim. </p>
         </div>
-        <img class="oilamimg" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <img class="oilamimg" data-aos="flip-left" src="./ukalarim.jpg" alt="">
     </div>
+    
     
 </section>
 
 <center>
+<section class="slider3d-section">
+
+    <h2 class="katta_title">Loyihalarim</h2><br><br>
+
+    <div class="slider3d">
+        <div class="track3d">
+            <div class="slide"><img src="./photo_1_2026-04-07_15-21-06.jpg"></div>
+            <div class="slide"><img src="./photo_2_2026-04-07_15-21-06.jpg"></div>
+            <div class="slide"><img src="./photo_3_2026-04-07_15-21-06.jpg"></div>
+            <div class="slide"><img src="./photo_4_2026-04-07_15-21-06.jpg"></div>
+            <div class="slide"><img src="./photo_7_2026-04-07_15-21-06.jpg"></div>
+            <div class="slide"><img src="./photo_8_2026-04-07_15-21-06.jpg"></div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
 <section id="loyihalarim" class="loyihalarim">
     
-    <div class="pd">
-        <h2>Mening <span>Loyihalarim</span></h2>
+    <div>
+        <center>
+            <b style="font-size: 50px; background: linear-gradient(90deg, #22d3ee, #a855f7); margin-top: 50px;">HTML Loyihalarim</b><br><br>
+        </center>
+        <div class="HTML" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+            <div class="card" data-aos="fade-up" data-aos-duration="3000">
+                <div class="card_bg"></div>
+                <img class="img1" src="./Skrinshot 2025-07-24 110306.png">
+            </div>
+            <div class="card" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1500">
+                <div class="card_bg"></div>
+                <img class="img1" src="./Skrinshot 2025-07-24 182640.png">
+            </div>
+            <div class="card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="card_bg"></div>
+                <img class="img1" src="./Skrinshot 2025-07-25 192725.png">
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                <div class="card_bg"></div>
+                <img class="img1" src="./Skrinshot 2025-07-27 191508.png">
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-duration="3000">
+                <div class="card_bg"></div>
+                <img class="img1" src="./Skrinshot 2025-07-30 191536.png">
+            </div>
+            <div class="card" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1500">
+                <div class="card_bg"></div>
+                <img class="img1" src="./Skrinshot 2026-04-12 222010.png">
+            </div>
+            <div class="card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="card_bg"></div>
+                <img class="img1" src="./Skrinshot 2026-04-12 222055.png">
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                <div class="card_bg"></div>
+                <img class="img1" src="./Skrinshot 2026-04-12 222136.png">
+            </div>
+        </div><br><br>
     </div>
 
-    <div class="slider">
-        <div class="loyiha">
-
-            <!-- CARDLAR -->
-            <div class="card">
+            <center>
+                <b style="font-size: 50px; background: linear-gradient(90deg, #22d3ee, #a855f7); margin-top: 30px;">CSS loyihalarim</b>
+            </center><br><br>
+    <div class="HTML">
+                <div class="card" data-aos="fade-up" data-aos-duration="3000">
                 <div class="card_bg"></div>
-                <img class="img1" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3">
+                <img class="img1" src="./photo_1_2026-04-07_15-21-06.jpg">
             </div>
-
-            <div class="card">
+            <div class="card" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1500">
                 <div class="card_bg"></div>
-                <img class="img1" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3">
+                <img class="img1" src="./photo_2_2026-04-07_15-21-06.jpg">
             </div>
-
-            <div class="card">
+            <div class="card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="card_bg"></div>
-                <img class="img1" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3">
+                <img class="img1" src="./photo_3_2026-04-07_15-21-06.jpg">
             </div>
-
-            <div class="card">
+            <div class="card" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
                 <div class="card_bg"></div>
-                <img class="img1" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3">
+                <img class="img1" src="./photo_4_2026-04-07_15-21-06.jpg">
             </div>
-
-            <div class="card">
+            <div class="HTML">
+                <div class="card" data-aos="fade-up" data-aos-duration="3000">
                 <div class="card_bg"></div>
-                <img class="img1" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3">
+                <img class="img1" src="./photo_7_2026-04-07_15-21-06.jpg">
             </div>
-
-            <!-- DUPLICATE (loop uchun) -->
-            <div class="card">
+            <div class="card" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1500">
                 <div class="card_bg"></div>
-                <img class="img1" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3">
+                <img class="img1" src="./photo_8_2026-04-07_15-21-06.jpg">
             </div>
-
-            <div class="card">
+            <div class="card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="card_bg"></div>
-                <img class="img1" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3">
+                <img class="img1" src="./photo_22_2026-04-07_15-21-06.jpg">
             </div>
-
-            <div class="card">
+            <div class="card" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
                 <div class="card_bg"></div>
-                <img class="img1" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3">
+                <img class="img1" src="./photo_21_2026-04-07_15-21-06.jpg">
             </div>
-
-            <div class="card">
+            </div><br><br>
+    </div>
+        <center>
+            <b style="font-size: 50px; background: linear-gradient(90deg, #22d3ee, #a855f7); margin-top: 50px;">HTML va CSS Loyiham</b><br><br>
+        </center>
+        <div class="HTML" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+            <div class="card" data-aos="fade-up" data-aos-duration="3000">
                 <div class="card_bg"></div>
-                <img class="img1" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3">
+                <a href="https://mmbfood.netlify.app/">   
+                    <img class="img1" src="./Skrinshot 2026-04-14 155118.png">
+                </a>
             </div>
-
-            <div class="card">
-                <div class="card_bg"></div>
-                <img class="img1" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3">
-            </div>
-
         </div>
-    </div>
-
 </section>
 </center>
 
 <center>
-    <section id="guruhim" class="guruhim pd"><h2>Mening <span style="color: #22d3ee;">Guruhim</span></h2>
-<div class="guruh">
-    <div class="card2">
-        <img class="img2" src="ttps://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        <h2>Ustozim</h2>
-        <p>
-        Bular mening ustozim. Ularning isimlari Shahrizoda.
-        ustozim menga frontendni 3 oydan beri orgatib kevotdila
-        </P>
-    </div>
+    <section id="guruhim" class="guruhim pd" ><h2 style="font-size: 50px; background: linear-gradient(90deg, #22d3ee, #a855f7); margin-top: 30px;">Mening <span style="color: #22d3ee;">Guruhim</span></h2>
 
-    <div class="card2">
-        <img class="img2" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        <h2>Ustozim</h2>
-        <p>
-        Bular mening ustozim. Ularning isimlari Shahrizoda.
-        ustozim menga frontendni 3 oydan beri orgatib kevotdila
-        </P>
-    </div>
+        <div>
+            
+        </div>
+    <div class="guruh">
 
-    <div class="card2">
-        <img class="img2" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        <h2>Ustozim</h2>
-        <p>
-        Bular mening ustozim. Ularning isimlari Shahrizoda.
-        ustozim menga frontendni 3 oydan beri orgatib kevotdila
-        </P>
-    </div>
+        <div class="card2" style="visibility: hidden;">
+            <img class="img2" src="" alt="">
+            <h2>Ustozim</h2>
+            <p>
+                Bular mening ustozim. Ularning isimlari Shahrizoda.
+                Ustozim menga frontendni 3 oydan beri o'rgatib kelyaptilar.
+            </p>
+        </div>
+        <div class="card2">
+            <img class="img2" src="./IMG_9766.JPG" alt="">
+            <h2>Ustozim</h2>
+            <p>
+                Bular mening ustozim. Ularning isimlari Shahrizoda.
+                Ustozim menga frontendni 3 oydan beri o'rgatib kelyaptilar.
+            </p>
+        </div>
+        <div class="card2" style="visibility: hidden;">
+            <img class="img2" src="" alt="">
+            <h2>Ustozim</h2>
+            <p>
+                Bular mening ustozim. Ularning isimlari Shahrizoda.
+                Ustozim menga frontendni 3 oydan beri o'rgatib kelyaptilar.
+            </p>
+        </div>
 
-    <div class="card2">
-        <img class="img2" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        <h2>Ustozim</h2>
-        <p>
-        Bular mening ustozim. Ularning isimlari Shahrizoda.
-        ustozim menga frontendni 3 oydan beri orgatib kevotdila
-        </P>
-    </div>
 
-    <div class="card2">
-        <img class="img2" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        <h2>Ustozim</h2>
-        <p>
-        Bular mening ustozim. Ularning isimlari Shahrizoda.
-        ustozim menga frontendni 3 oydan beri orgatib kevotdila
-        </P>
-    </div>
+        <div class="card2">
+            <img class="img2" src="./IMG_9420.JPG" alt="Muzaffar">
+            <h2>Muzaffar</h2>
+            <p>
+                Bular mening guruhdoshim. Biz birga frontendni 3 oydan beri o'rganyapmiz.
+            </p>
+        </div>
+        
+        <div class="card2">
+            <img class="img2" src="./IMG_9418.JPG" alt="Abdu Bosit">
+            <h2>Abdul Bosit</h2>
+            <p>
+                Bular mening guruhdoshim. Biz birga frontendni 3 oydan beri o'rganyapmiz.
+            </p>
+        </div>
+        
+        <div class="card2">
+            <img class="img2" src="./IMG_9416.JPG" alt="Afzal">
+            <h2>Afzal</h2>
+            <p>
+                Bular mening guruhdoshim. Biz birga frontendni 3 oydan beri o'rganyapmiz.
+            </p>
+        </div>
+        
+        <div class="card2">
+            <img class="img2" src="./IMG_9414.JPG" alt="Elnur">
+            <h2>Elnur</h2>
+            <p>
+                Bular mening guruhdoshim. Biz birga frontendni 3 oydan beri o'rganyapmiz.
+            </p>
+        </div>
+        
+        <div class="card2">
+            <img class="img2" src="./IMG_9410.JPG" alt="Xojiakbar">
+            <h2>Xojiakbar</h2>
+            <p>
+                Bular mening guruhdoshim. Biz birga frontendni 3 oydan beri o'rganyapmiz.
+            </p>
+        </div>
+        
+        <div class="card2">
+            <img class="img2" src="./IMG_9408.JPG" alt="AbduQayum">
+            <h2>AbduQayum</h2>
+            <p>
+                Bular mening guruhdoshim. Biz birga frontendni 3 oydan beri o'rganyapmiz.
+            </p>
+        </div>
+        
+        <div class="card2">
+            <img class="img2" src="./IMG_9406.JPG" alt="Rustam">
+            <h2>Rustam</h2>
+            <p>
+                Bular mening guruhdoshim. Biz birga frontendni 3 oydan beri o'rganyapmiz.
+            </p>
+        </div>
+        
+        <div class="card2">
+            <img class="img2" src="./photo_2026-04-07_15-01-29.jpg" alt="AbduMalik">
+            <h2>AbdulMalik</h2>
+            <p>
+                Bular mening guruhdoshim. Biz birga frontendni 3 oydan beri o'rganyapmiz.
+            </p>
+        </div>
+        <div class="card2">
+            <img class="img2" src="./IMG_9598.JPG" alt="AbduMalik">
+            <h2>Abdulloh</h2>
+            <p>
+                Bular mening guruhdoshim. Biz birga frontendni 3 oydan beri o'rganyapmiz.
+            </p>
+        </div>
+        <div class="card2">
+            <img class="img2" src="./IMG_9600.JPG" alt="AbduMalik">
+            <h2>Abubakr</h2>
+            <p>
+                Bular mening guruhdoshim. Biz birga frontendni 3 oydan beri o'rganyapmiz.
+            </p>
+        </div>
 
-    <div class="card2">
-        <img class="img2" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        <h2>Ustozim</h2>
-        <p>
-        Bular mening ustozim. Ularning isimlari Shahrizoda.
-        ustozim menga frontendni 3 oydan beri orgatib kevotdila
-        </P>
     </div>
-
-    <div class="card2">
-        <img class="img2" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        <h2>Ustozim</h2>
-        <p>
-        Bular mening ustozim. Ularning isimlari Shahrizoda.
-        ustozim menga frontendni 3 oydan beri orgatib kevotdila
-        </P>
-    </div>
-
-    <div class="card2">
-        <img class="img2" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        <h2>Ustozim</h2>
-        <p>
-        Bular mening ustozim. Ularning isimlari Shahrizoda.
-        ustozim menga frontendni 3 oydan beri orgatib kevotdila
-        </P>
-    </div>
-
-    <div class="card2">
-        <img class="img2" src="https://tse4.mm.bing.net/th/id/OIP.CIac5BAbYhrvBddLTcoNxAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        <h2>Ustozim</h2>
-        <p>
-        Bular mening ustozim. Ularning isimlari Shahrizoda.
-        ustozim menga frontendni 3 oydan beri orgatib kevotdila
-        </P>
-    </div>
-</div>
 </section>
 </center>
+
+<footer>
+    
+</footer>
+
 </main>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
